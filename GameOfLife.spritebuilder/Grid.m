@@ -152,6 +152,7 @@ static const int GRID_COLUMNS = 10;
 }
 
 -(void)updateCreatures{
+    printf("updateCreatures \n");
     int numAlive = 0;
     
     for(int i = 0; i < [_gridArray count]; i++){
