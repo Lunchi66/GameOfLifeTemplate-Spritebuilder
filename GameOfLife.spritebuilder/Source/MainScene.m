@@ -30,11 +30,13 @@
 - (void)play
 {
     //this tells the game to call a method called 'step' every half second.
+    printf("PLAY");
     [self schedule:@selector(step) interval:0.5f];
 }
 
 - (void)pause
 {
+        printf("PAUSE");
     [self unschedule:@selector(step)];
 }
 
