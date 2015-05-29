@@ -82,7 +82,7 @@ static const int GRID_COLUMNS = 10;
     NSInteger row = touchPosition.y / _cellHeight;
     NSInteger column = touchPosition.x / _cellWidth;
     
-    return _gridArray[row][column]
+    return _gridArray[row][column];
 }
 
 @end
