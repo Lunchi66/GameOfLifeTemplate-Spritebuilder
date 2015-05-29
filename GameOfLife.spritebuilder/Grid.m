@@ -66,6 +66,7 @@ static const int GRID_COLUMNS = 10;
 
 - (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event
 {
+        printf("touchBegan GRID");
     //get the x,y coordinates of the touch
     CGPoint touchLocation = [touch locationInNode:self];
     
@@ -86,6 +87,8 @@ static const int GRID_COLUMNS = 10;
 }
 
 - (void)evolveStep{
+    
+    printf("evolveStep");
     //update each Creature's neighbor count
     [self countNeighbors];
     
@@ -97,6 +100,7 @@ static const int GRID_COLUMNS = 10;
 }
 
 -(void)countNeighbors{
+        printf("countNeighbors");
     // iterate through the rows
     // note that NSArray has a method 'count' that will return the number of elements in the array
     for (int i = 0; i < [_gridArray count]; i++)
