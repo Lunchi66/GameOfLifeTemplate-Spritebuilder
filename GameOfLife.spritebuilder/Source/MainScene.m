@@ -18,9 +18,11 @@
 
 - (id)init
 {
+    printf("init");
     self = [super init];
     
     if (self) {
+        printf("self != nulL");
         _timer = [[CCTimer alloc] init];
     }
     
